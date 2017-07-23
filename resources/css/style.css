@@ -1,33 +1,32 @@
 /*--------------------------------------------------*/
 /*UNIVERSAL TAGS*/
 html{
-  font-size: 16px;
+
   align-content: center;
   justify-content: center;
 }
 body{
-  align-items: center;
+ align-items: center;
+ align-content: center;
  justify-content: center;
- border: 3px solid blue;
+ width: 100%;
 }
 /*--------------------------------------------------*/
 /*HEADER TAGS*/
 header{
   display: inline-flex;
-  background-color:black;
-  align-items: center;
+  background-color: black;
   Height: 7rem;
   width:100%;
   padding-left: 10rem;
 
 }
-img {
+.logo img {
   padding-right: 15px;
   align-content: center;
-  height: 40px;
+  height: 2.5rem;
   width: auto;
   margin: 0;
-
 }
 .logo{
   display: inline-flex;
@@ -48,55 +47,88 @@ h1{
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 700px;
-  width: auto;
-  position: relative;
- border: 1px solid blue;
+
+
+  margin: 0;
 }
 .pagehead{
   display:inline-block;
-  height: 200px;
+  height: auto;
   width: 300px;
   background-color: black;
   border: 4px solid blue;
-  position: absolute;
+  margin-left: 10rem;
+  margin-top:100px;
+  margin-bottom: 100px;
+  padding: 2rem;
 }
 
 /*--------------------------------------------------*/
 /*MIDDLE TAGS*/
 ul{
+  justify-content:space-around;
   display:inline-flex;
   background-color: red;
-  align-items: stretch;
+  align-items: center;
   list-style-type: none;
-  text-decoration: underline;
   width: 100%;
   height: 70px;
   margin: 0;
+  border: 3px solid blue;
 }
 li{
-  display: inline-block;
-  font-size: 32px;
-  padding:20px;
-  font-weight: bold;
+  display: inline;
+  font-size: 24px;
+  font-weight: lighter;
+  border:3px solid blue;
+  color: white;
+  margin: 0;
+  justify-content: center;
 }
 
 /*--------------------------------------------------*/
 /*BOTTOM TAGS*/
+bottom{
+  width:100%;
+  height:700px;
+  background-color: white;
+  border:4px solid red;
+  padding: 50px;
+}
 .items {
-    display: inline-block;
+    display: inline-flex;
     margin-bottom: 50px;
-    font-weight: bold;
+    text-align: center;
+    border:4px solid black;
+    align-items: center;
+    justify-content: space-around;
+}
+.items .image{
+  border: 4px solid black;
+  margin: 20px;
+  justify-content: center;
 }
 
 img {
-    display: block;
-    height: 200px;
-    width: 300px;
+
+    height: 50%;
+    width: 50%;
     margin: 10px;
-    padding-left: 10px;
+    padding: 32px;
+
 }
-.image{
+.image span{
+  display:flex;
+  background-color: black;
+  border-image: initial;
+  color: white;
+  padding: 2em 0px;
+  text-align: center;
+}
+span{
+  justify-content:center;
+}
+/*.image{
   display:flex;
 }
 
@@ -112,4 +144,5 @@ footer {
   padding-left: 20px;
   padding-bottom: 30px;
   color: white;
+
 }
